@@ -1,0 +1,38 @@
+header.main-header {
+  padding: 20px;
+  background-color: $white;
+  border-left: $border;
+  border-right: $border;
+  border-bottom: $border;
+}
+
+.header-logo,
+.header-links {
+  padding: 0;
+}
+
+.header-logo {
+  .header-link {
+    color: $belize;
+    font-size: 20px;
+    font-weight: $font-bolder;
+    text-transform: uppercase;
+
+    &:hover {
+      border-color: transparent;
+    }
+  }
+}
+
+.header-links {
+  text-align: right;
+
+  .header-link {
+    margin-left: 20px;
+
+    &.is-active {
+      color: $belize;
+      border-color: $belize;
+    }
+  }
+}
