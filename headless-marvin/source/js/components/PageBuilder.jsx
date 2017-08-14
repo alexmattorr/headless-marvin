@@ -33,9 +33,9 @@ export default class PageBuilder extends React.Component {
           var layout = Object.keys(layouts).map(function(i) {
             var title = layouts[i].acf_fc_layout;
               if(title === 'hero') {
-                return <Hero data={layouts[i]} />
+                return <Hero key={i} data={layouts[i]} />
               } else if(title === 'side_by_side') {
-                return <SideBySide data={layouts[i]} />
+                return <SideBySide key={i} data={layouts[i]} />
               } else {
                 console.log('none');
               }
