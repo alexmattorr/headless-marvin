@@ -15,7 +15,7 @@ export default class App extends Component {
       <div className='App'>
         <Header />
 
-        <div className='Page row'>
+        <div className='Page'>
           <Routes />
         </div>
 

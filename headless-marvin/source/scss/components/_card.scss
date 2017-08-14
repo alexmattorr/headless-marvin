@@ -1,0 +1,35 @@
+.card-wrapper {
+  justify-content: space-between;
+}
+
+.card {
+  margin-bottom: 2%;
+  cursor: pointer;
+  border: $border;
+  transition: box-shadow ease .3s;
+
+  figure {
+    @include aspect-ratio(4,4);
+    @include bgCover();
+  }
+
+  &:hover {
+    box-shadow: 0 6px 12px rgba($black, 0.12), 0 4px 4px rgba($black, 0.24);
+  }
+
+  &.half {
+    width: 49%;
+  }
+
+  &.third {
+    width: 31%;
+  }
+
+  &.quarter {
+    width: 23.5%;
+  }
+}
+
+.card-content {
+  padding: 10px;
+}
